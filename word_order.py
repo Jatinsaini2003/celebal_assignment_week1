@@ -13,5 +13,6 @@ def count_words_preserve_order(text):
 
 # Example usage:
 if __name__ == "__main__":
-    text = input("Enter text: ")
+    df = pd.read_excel("Big%20data.xlsx")  # Make sure input.xlsx exists in the same directory and file is can't open in my lms portal and can't download.
+    text = " ".join(df.astype(str).values.flatten())
     count_words_preserve_order(text)
